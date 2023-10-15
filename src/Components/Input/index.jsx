@@ -1,5 +1,12 @@
 import React from "react";
-import "./index.css";
+import styled from "styled-components";
+
+const StyleInput = styled.input`
+   padding: 16px;
+   background: #ffffff;
+   border: 1px solid #7660de;
+   border-radius: 5px;
+`;
 
 export default class Input extends React.Component {
    state = {};
@@ -10,20 +17,16 @@ export default class Input extends React.Component {
             texto: evento.target.value,
          });
       };
-      const onClick = () => {
-         console.log(this.state);
-      };
       return (
          <div>
             <label>{label}</label>
             <br />
-            <input
+            <StyleInput
                onChange={onChange}
-               class="input"
+               className="input"
                type="text"
                placeholder={label}
             />
-            <button onClick={onClick}>clickeame</button>
          </div>
       );
    }

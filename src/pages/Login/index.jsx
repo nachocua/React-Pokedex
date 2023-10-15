@@ -1,12 +1,11 @@
-import "./App.css";
-import Boton from "../Boton";
-import Panel from "../Panel";
-import Input from "../Input";
+import "./index.css";
+import Boton from "../../Components/Boton";
+import Panel from "../../Components/Panel";
+import Input from "../../Components/Input";
 
-export default function App() {
+export default function Login() {
    return (
       <div className="App">
-         {/**
          <Panel>
             <Input label="Username" />
             <Input label="Password" />
@@ -15,8 +14,6 @@ export default function App() {
                <Boton tipo="secundario">????</Boton>
             </div>
          </Panel>
-   */}
-         <Input label="Username" />
       </div>
    );
 }
