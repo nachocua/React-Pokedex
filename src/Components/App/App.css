@@ -1,0 +1,9 @@
+body {
+   background: #eee;
+}
+
+.layout-horizontal {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
